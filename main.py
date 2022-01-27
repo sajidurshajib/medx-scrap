@@ -4,7 +4,7 @@ import requests
 url = 'https://medex.com.bd/'
 i = 1
 def app():
-    page_number = 206
+    page_number = 1
     last_page = 707
 
     while page_number <= last_page:
