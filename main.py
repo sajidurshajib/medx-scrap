@@ -13,7 +13,8 @@ def app():
         page_number +=1
 
 def page(single_page):
-    print(single_page)
+    print('')
+    print('    '+single_page)
     print('')
     html_text = requests.get(single_page).text
     soup = BeautifulSoup(html_text, 'lxml')
@@ -47,7 +48,7 @@ def page(single_page):
         ''')
 
 
-        print(i)
+        print('    '+str(i))
         i += 1
 
 
